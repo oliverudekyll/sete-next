@@ -6,7 +6,7 @@
 
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 
   background-color: white;
 
@@ -21,12 +21,15 @@
   font-family: Helvetica, Arial, sans-serif;
 
   font-size: clamp(1rem, 15vw, 100rem);
+  font-size: 2rem;
   line-height: 0.55;
   letter-spacing: -0.05em;
   font-weight: bold;
   text-align: center;
   color: black;
   white-space: nowrap;
+  text-decoration: underline;
+  text-decoration-thickness: 0.1em;
 
   transition: color 0.6s ease-in-out;
   cursor: pointer;
@@ -42,7 +45,6 @@
 
   color: black;
   transition: top 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  transition-delay: 100ms;
 }
 
 .email:after {
@@ -55,6 +57,7 @@
 
   color: black;
   transition: top 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition-delay: 100ms;
 }
 
 .email:hover {
@@ -62,10 +65,10 @@
 }
 
 .email:hover:before {
-  top: 25%;
+  top: 75%;
   /* color: hsl(0, 0%, 12.5%); */
 }
 
 .email:hover:after {
-  top: 0%;
+  top: 100%;
 }
