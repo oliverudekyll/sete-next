@@ -21,21 +21,21 @@
   font-family: Helvetica, Arial, sans-serif;
 
   font-size: clamp(1rem, 15vw, 100rem);
-  font-size: 2rem;
+  font-size: 1rem;
   line-height: 0.55;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.025em;
   font-weight: bold;
   text-align: center;
   color: black;
   white-space: nowrap;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   text-decoration-thickness: 0.1em;
 
-  transition: color 0.6s ease-in-out;
+  /* transition: color 0.6s ease-in-out; */
   cursor: pointer;
 }
 
-.email:before {
+/* .email:before {
   content: "info@sete.ee";
 
   position: absolute;
@@ -58,17 +58,17 @@
   color: black;
   transition: top 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   transition-delay: 100ms;
-}
+} */
 
 .email:hover {
-  /* color: hsl(0, 0%, 25%); */
+  color: hsl(0, 0%, 50%);
 }
 
 .email:hover:before {
-  top: 75%;
+  /* top: 75%; */
   /* color: hsl(0, 0%, 12.5%); */
 }
 
 .email:hover:after {
-  top: 100%;
+  /* top: 100%; */
 }
