@@ -1,0 +1,31 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100dvw;
+  height: 100dvh;
+  height: 100dvh;
+  /* top: 50dvh; */
+  padding: 0.5rem 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  filter: blur(5px);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  max-width: 50dvw;
+  max-height: 70dvh;
+  /* height: fit-content; */
+  /* max-height: 25dvh; */
+  /* max-height: 100%; */
+  padding: 0;
+
+  object-fit: contain;
+}
