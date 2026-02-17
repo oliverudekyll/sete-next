@@ -6,26 +6,35 @@
   bottom: 0;
   width: 100dvw;
   height: 100dvh;
-  height: 100dvh;
-  /* top: 50dvh; */
-  padding: 0.5rem 1rem;
+  overflow: hidden;
+  pointer-events: all;
+}
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.imageWrapper {
+  position: absolute;
+  width: auto;
+  height: auto;
+  max-width: 15dvw;
+  max-height: 25dvh;
+  padding: 0;
+  pointer-events: auto;
+  user-select: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+  overflow: hidden;
+}
 
-  filter: blur(5px);
+.imageWrapper:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
 }
 
 .image {
   width: 100%;
-  height: auto;
-  max-width: 50dvw;
-  max-height: 70dvh;
-  /* height: fit-content; */
-  /* max-height: 25dvh; */
-  /* max-height: 100%; */
-  padding: 0;
-
+  height: 100%;
   object-fit: contain;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
 }
