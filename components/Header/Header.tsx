@@ -10,6 +10,7 @@ export default function Header() {
           <li>Visual Identities</li>
           <li>Web Design / Development</li>
           <li>Motion Graphics</li>
+          <li>Performance Marketing & Analytics</li>
         </ul>
       </div>
       <a href="mailto:info@sete.ee">info@sete.ee</a>
